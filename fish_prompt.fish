@@ -95,7 +95,7 @@ function fish_prompt
     set -gx LAST_VIRTUAL_ENV $VIRTUAL_ENV
   end
 
-  _prompt_virtualfish $gray C8FBF6
+  _prompt_virtualfish $gray (set_color C8FBF6)
 
   _prompt_rust $gray $orange
 
