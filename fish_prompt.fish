@@ -85,7 +85,7 @@ function fish_prompt
 
   _prompt_whoami $gray $green
 
-  set_color -o cyan
+  set_color -o F8F1C7
   printf '%s' (prompt_pwd)
 
   _prompt_rubies $gray $red
@@ -122,9 +122,9 @@ function fish_prompt
   end
 
   if test $exit_code -ne 0
-    set arrow_colors 600 900 c00 f00
+    set arrow_colors  DF10D6 F482EF FFCCFD white
   else
-    set arrow_colors 060 090 0c0 0f0
+    set arrow_colors  DF10D6 F482EF FFCCFD white
   end
 
   if set -q SCORPHISH_GIT_INFO_ON_FIRST_LINE
@@ -135,7 +135,7 @@ function fish_prompt
 
   for arrow_color in $arrow_colors
     set_color $arrow_color
-    printf '»'
+    printf '♥'
   end
 
   printf ' '
